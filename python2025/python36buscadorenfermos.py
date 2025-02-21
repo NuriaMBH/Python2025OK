@@ -11,6 +11,8 @@ print("Introduzca nombre de inscripción")
 data = input()
 cursor = connection.cursor()
 sql="select apellido, direccion from enfermo where inscripcion="+data
+#si hubiese puesto sql="select * from ENFERMO where inscripcion="+data 
+# #SERÍAN POSICIONES DIFERENTES EN EL ROW, MIRAR EJEMPLO PROFESOR
 cursor.execute(sql)
 #como estamos buscando por PK, solamente nos puede devolver una fila
 row = cursor.fetchone()
