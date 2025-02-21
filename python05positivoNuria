@@ -1,0 +1,8 @@
+print("Acceso a red sociales, ¿Cuantos años tienes?")
+yo= int(input())
+if(yo>14):
+    print ("Registrate")
+elif (yo<14):
+    print ("Acceso denegado")
+else: (yo==14)
+print ("necesitas la autorización de un adulto")
